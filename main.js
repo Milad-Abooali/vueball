@@ -4,7 +4,7 @@
 
 Vue.component('todo-item', {
   props: ['item'],
-  template: `<li v-bind:class="'text-'+item['color']">{{ item['text'] }}</li>`
+  template: `<li :class="'text-'+item['color']">{{ item['text'] }}</li>`
 })
 
 var app = new Vue({
@@ -33,5 +33,3 @@ var app = new Vue({
 
 
 app.todos.push({text:'new text',color:'dark'});
-
-app.todos.unshift({text:'new text',color:'dark'});
