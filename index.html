@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>VueBall by Milad Abooali</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/vue.js" defer="true"></script>
     <script src="js/main.js" defer="true"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
-    <div id="app">
 
-      <hr>
+    <div id="app" class="container mt-4">
+          <div class="col-sm-12">
 
-      <ball :ball="creatBall"></ball>
+            <div class="row">{{ test }}</div>
+            <div class="row">
 
+              <ball v-for="ball in balls" :ball="ball" :key="ball.color"></ball>
+
+
+            </div>
+
+
+          </div>
     </div>
 
   </body>
