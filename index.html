@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/vue.js" defer="true"></script>
     <script src="js/main.js" defer="true"></script>
   </head>
   <body>
 
     <div id="app">
-      <span v-if="seen">Now you see me</span>
-      <ol>
-        <li v-for="todo in todos" :class="'alert-'+todo.color">
-          {{ todo.text }}
-        </li>
-      </ol>
 
       <hr>
-      <input v-model="firstName" >
-      <input v-model="LastName"  >
-      <p>{{ firstName +' '+LastName }}</p>
 
-      <ball></ball>
-
+      <ball :ball="creatBall"></ball>
 
     </div>
 

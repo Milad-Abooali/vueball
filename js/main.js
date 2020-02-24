@@ -2,40 +2,15 @@
 
 
 
-Vue.component('todo-item', {
-  props: ['item'],
-  template: `<li :class="'text-'+item['color']">{{ item['text'] }}</li>`
-})
-
-
 Vue.component('ball', {
   props: ['ball'],
-  template: `<figure :class="'circle '+item['color']"></figure>`
+  template: `<figure :class="'circle '+ball.color"></figure>`
 })
 
 var app = new Vue({
   el: '#app',
   data: {
     seen: true,
-    firstName: '',
-    LastName: '',
-    todos: [
-              {
-                text: 'Ledspt',
-                color: 'primary'
-              },
-              {
-                text: 'Lea sdf sdf vaScript',
-                color: 'warning'
-              },
-              {
-                text: 'Leafsdfds dsf Script',
-                color: 'danger'
-              }
-            ]
+    creatBall: {text: 'Ledspt',color: 'blue'}
   }
 })
-
-
-
-app.todos.push({text:'new text',color:'dark'});
