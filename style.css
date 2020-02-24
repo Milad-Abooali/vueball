@@ -1,0 +1,15 @@
+
+.circle {
+  position: absolute;
+  z-index: 99;
+  display: block;
+  background: black;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  margin: 0;
+  text-align: center;color: #000;font-weight: 700;font-size: 20px;
+}
+.blue{background: radial-gradient(circle at 19px 17px, #bbb, #363dc3, #000);}
+.red{background: radial-gradient(circle at 19px 17px, #fff, #ff3600, #000);}
+.des{background: radial-gradient(circle at 17px 19px, #ffb100, #65451a, #ffba00);}
