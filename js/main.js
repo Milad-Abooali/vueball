@@ -7,6 +7,12 @@ Vue.component('todo-item', {
   template: `<li :class="'text-'+item['color']">{{ item['text'] }}</li>`
 })
 
+
+Vue.component('ball', {
+  props: ['ball'],
+  template: `<figure :class="'circle '+item['color']"></figure>`
+})
+
 var app = new Vue({
   el: '#app',
   data: {

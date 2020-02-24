@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js" defer="true"></script>
-    <script src="main.js" defer="true"></script>
+    <script src="js/vue.js" defer="true"></script>
+    <script src="js/main.js" defer="true"></script>
   </head>
   <body>
 
@@ -21,9 +21,8 @@
       <input v-model="LastName"  >
       <p>{{ firstName +' '+LastName }}</p>
 
-      <ol>
-        <todo-item v-for="todo in todos" :item="todo"></todo-item>
-      </ol>
+      <ball></ball>
+
 
     </div>
 
